@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Precios - Titan Gym</title>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">Titan Gym</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="clases.html">Clases</a></li>
+        <li><a href="entrenadores.html">Entrenadores</a></li>
+        <li><a href="precios.html" class="active">Precios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="precios">
+      <h2>Comparador de Planes</h2>
+      <div class="toggle-container">
+        <span>Mensual</span>
+        <label class="toggle">
+          <input type="checkbox" id="toggle-plan">
+          <span class="slider"></span>
+        </label>
+        <span>Anual</span>
+      </div>
+      <div class="tarjetas-precios">
+        <div class="tarjeta-precio">
+          <h3>Básico</h3>
+          <p class="precio" data-mensual="$8.000" data-anual="$80.000">$8.000/mes</p>
+          <ul>
+            <li>Acceso limitado a sala de musculación</li>
+            <li>2 clases grupales por semana</li>
+            <li>Evaluación física inicial</li>
+            <li class="no-incluido">Sin acceso a piscina</li>
+            <li class="no-incluido">Sin entrenador personal</li>
+          </ul>
+          <button>Elegir Plan</button>
+        </div>
+        <div class="tarjeta-precio popular">
+          <h3>Premium</h3>
+          <p class="precio" data-mensual="$12.000" data-anual="$120.000">$12.000/mes</p>
+          <ul>
+            <li>Acceso ilimitado a sala de musculación</li>
+            <li>Clases grupales ilimitadas</li>
+            <li>Evaluaciones físicas trimestrales</li>
+            <li>Acceso a piscina</li>
+            <li class="no-incluido">Sin entrenador personal</li>
+          </ul>
+          <button>Elegir Plan</button>
+        </div>
+        <div class="tarjeta-precio">
+          <h3>Elite</h3>
+          <p class="precio" data-mensual="$18.000" data-anual="$180.000">$18.000/mes</p>
+          <ul>
+            <li>Acceso total 24/7</li>
+            <li>Clases grupales ilimitadas</li>
+            <li>4 sesiones mensuales con entrenador personal</li>
+            <li>Acceso a piscina y spa</li>
+            <li>Plan nutricional personalizado</li>
+          </ul>
+          <button>Elegir Plan</button>
+        </div>
+      </div>
+      <h2>Comparativa de Planes</h2>
+      <table class="tabla-comparativa">
+        <thead>
+          <tr>
+            <th>Características</th>
+            <th>Básico</th>
+            <th>Premium</th>
+            <th>Elite</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Acceso a sala de musculación</td>
+            <td>Horario limitado</td>
+            <td>24/7</td>
+            <td>24/7</td>
+          </tr>
+          <tr>
+            <td>Clases grupales</td>
+            <td>2 por semana</td>
+            <td>Ilimitadas</td>
+            <td>Ilimitadas</td>
+          </tr>
+          <tr>
+            <td>Evaluación física</td>
+            <td>Inicial</td>
+            <td>Trimestral</td>
+            <td>Mensual</td>
+          </tr>
+          <tr>
+            <td>Entrenador personal</td>
+            <td class="no-incluido">✘</td>
+            <td class="no-incluido">✘</td>
+            <td>✔</td>
+          </tr>
+          <tr>
+            <td>Acceso a piscina</td>
+            <td class="no-incluido">✘</td>
+            <td>✔</td>
+            <td>✔</td>
+          </tr>
+          <tr>
+            <td>Plan nutricional</td>
+            <td class="no-incluido">✘</td>
+            <td class="no-incluido">✘</td>
+            <td>✔</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-newsletter">
+        <h3>¿Querés estar conectado?</h3>
+        <form class="newsletter-form">
+          <input type="text" placeholder="Nombre" required>
+          <input type="email" placeholder="E-mail" required>
+          <button type="submit">Suscribirme</button>
+        </form>
+      </div>
+
+      <div class="footer-mapa">
+        <h3>¿Dónde estamos?</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1819.753772245603!2d-65.29365413796236!3d-24.188997732238352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5bca584281%3A0xb1d519d50cac526d!2sFacultad%20de%20Ingenier%C3%ADa%20-%20UNJu!5e0!3m2!1ses!2sar!4v1744351152959!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="footer-redes">
+        <h3>Seguinos</h3>
+        <p>¡Conéctate con nosotros en nuestras redes sociales para más novedades y consejos!</p>
+        <div class="redes">
+          <a href="#"><img src="img/facebook-icon.png" alt="Facebook" /></a>
+          <a href="#"><img src="img/instagram-icon.png" alt="Instagram" /></a>
+          <a href="#"><img src="img/twitter-icon.png" alt="Twitter" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Titan Gym on top. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const togglePlan = document.getElementById('toggle-plan');
+    const precios = document.querySelectorAll('.precio');
+
+    togglePlan.addEventListener('change', () => {
+      precios.forEach(precio => {
+        if (togglePlan.checked) {
+          precio.textContent = precio.getAttribute('data-anual');
+        } else {
+          precio.textContent = precio.getAttribute('data-mensual');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

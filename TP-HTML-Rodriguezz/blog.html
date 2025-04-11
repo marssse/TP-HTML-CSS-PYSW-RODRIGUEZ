@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Titan Gym</title>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">Titan Gym</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="clases.html">Clases</a></li>
+        <li><a href="entrenadores.html">Entrenadores</a></li>
+        <li><a href="precios.html">Precios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="blog">
+      <h2>Blog de Fitness</h2>
+
+      <!-- Filtros de categorías -->
+      <div class="filtros">
+        <label>
+          <input type="radio" name="categoria" id="todas" checked>
+          Todas
+        </label>
+        <label>
+          <input type="radio" name="categoria" id="nutricion">
+          Nutrición
+        </label>
+        <label>
+          <input type="radio" name="categoria" id="entrenamiento">
+          Entrenamiento
+        </label>
+        <label>
+          <input type="radio" name="categoria" id="bienestar">
+          Bienestar
+        </label>
+      </div>
+
+      <!-- Artículos -->
+      <div class="articulos">
+        <!-- Nutrición -->
+        <article class="articulo nutricion">
+          <img src="img/nutricion1.jpg" alt="Alimentos para ganar masa muscular">
+          <h3>5 Alimentos para Ganar Masa Muscular</h3>
+          <p>Descubre los mejores alimentos para potenciar tu entrenamiento...</p>
+        </article>
+        <article class="articulo nutricion">
+          <img src="img/nutricion2.jpg" alt="Dieta alta en proteínas">
+          <h3>Beneficios de una Dieta Alta en Proteínas</h3>
+          <p>Conoce cómo una dieta rica en proteínas puede ayudarte...</p>
+        </article>
+        <article class="articulo nutricion">
+          <img src="img/nutricion3.jpg" alt="Errores comunes en la alimentación">
+          <h3>Errores Comunes en la Alimentación Deportiva</h3>
+          <p>Asegúrate de evitar estos errores para mejorar tu rendimiento...</p>
+        </article>
+
+        <!-- Entrenamiento -->
+        <article class="articulo entrenamiento">
+          <img src="img/entrenamiento1.jpg" alt="Rutina de fuerza para principiantes">
+          <h3>Rutina de Fuerza para Principiantes</h3>
+          <p>Una guía completa para empezar con ejercicios de fuerza...</p>
+        </article>
+        <article class="articulo entrenamiento">
+          <img src="img/entrenamiento2.jpg" alt="Entrenamiento HIIT">
+          <h3>Entrenamiento HIIT: Quema Calorías Rápidamente</h3>
+          <p>Descubre cómo el HIIT puede transformar tu cuerpo en poco tiempo...</p>
+        </article>
+        <article class="articulo entrenamiento">
+          <img src="img/entrenamiento3.jpg" alt="Errores comunes en el gimnasio">
+          <h3>Errores Comunes en el Gimnasio</h3>
+          <p>Evita estos errores para maximizar tus resultados...</p>
+        </article>
+
+        <!-- Bienestar -->
+        <article class="articulo bienestar">
+          <img src="img/bienestar1.jpg" alt="Reducir el estrés con ejercicio">
+          <h3>Cómo Reducir el Estrés con Ejercicio</h3>
+          <p>El ejercicio no solo mejora tu cuerpo, también tu mente...</p>
+        </article>
+        <article class="articulo bienestar">
+          <img src="img/bienestar2.jpg" alt="Beneficios del yoga">
+          <h3>Beneficios del Yoga para el Bienestar</h3>
+          <p>Descubre cómo el yoga puede mejorar tu calidad de vida...</p>
+        </article>
+        <article class="articulo bienestar">
+          <img src="img/bienestar3.jpg" alt="Dormir mejor con ejercicio">
+          <h3>Cómo Dormir Mejor con Ejercicio</h3>
+          <p>El ejercicio puede ser la clave para un sueño reparador...</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección de comentarios -->
+    <section class="comentarios">
+      <h2>Comentarios</h2>
+      <div class="comentario">
+        <img src="img/avatar1.jpg" alt="Avatar de Juan Pérez" class="avatar">
+        <div class="contenido">
+          <h4>Francisca Cuello</h4>
+          <p>¡Excelente artículo! Me ayudó mucho a mejorar mi rutina.</p>
+        </div>
+      </div>
+      <div class="comentario">
+        <img src="img/avatar2.jpg" alt="Avatar de María López" class="avatar">
+        <div class="contenido">
+          <h4>Karina Rodriguez</h4>
+          <p>Gracias por los consejos, los pondré en práctica.</p>
+        </div>
+      </div>
+      <div class="comentario">
+        <img src="img/avatar3.jpg" alt="Avatar de Carlos Gómez" class="avatar">
+        <div class="contenido">
+          <h4>Carlos Gómez</h4>
+          <p>Muy interesante, espero leer más artículos como este.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-newsletter">
+        <h3>¿Querés estar conectado?</h3>
+        <form class="newsletter-form">
+          <input type="text" placeholder="Nombre" required>
+          <input type="email" placeholder="E-mail" required>
+          <button type="submit">Suscribirme</button>
+        </form>
+      </div>
+
+      <div class="footer-mapa">
+        <h3>¿Dónde estamos?</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1819.753772245603!2d-65.29365413796236!3d-24.188997732238352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5bca584281%3A0xb1d519d50cac526d!2sFacultad%20de%20Ingenier%C3%ADa%20-%20UNJu!5e0!3m2!1ses!2sar!4v1744351152959!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="footer-redes">
+        <h3>Seguinos</h3>
+        <p>¡Conéctate con nosotros en nuestras redes sociales para más novedades y consejos!</p>
+        <div class="redes">
+          <a href="#"><img src="img/facebook-icon.png" alt="Facebook" /></a>
+          <a href="#"><img src="img/instagram-icon.png" alt="Instagram" /></a>
+          <a href="#"><img src="img/twitter-icon.png" alt="Twitter" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Titan Gym on top. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll Reveal
+    const articles = document.querySelectorAll('.articulo');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal');
+        }
+      });
+    });
+
+    articles.forEach(article => observer.observe(article));
+  </script>
+</body>
+</html>
